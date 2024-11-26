@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我们的寝室</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-image: url('img/background.jpeg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            color: #000;
+            position: relative;
+        }
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.7); 
+            z-index: -1;
+        }
+        header { 
+            background-color: #4CAF50; 
+            color: white; 
+            padding: 10px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+        }
+        nav { 
+            display: flex; 
+            flex-direction: column; 
+            width: 200px;
+        }
+        nav ul { 
+            list-style-type: none; 
+            padding: 0; 
+            margin: 0;
+        }
+        nav ul li { 
+            margin-bottom: 10px;
+        }
+        nav ul li a { 
+            color: white; 
+            text-decoration: none; 
+            font-size: 16px;
+        }
+        section { 
+            margin: 15px;
+            margin-left: 210px; 
+        }
+        footer { 
+            background-color: #333; 
+            color: white; 
+            text-align: center; 
+            padding: 5px; 
+            position: fixed; 
+            bottom: 0; 
+            width: 100%;
+        }
+        .dorm-intro { 
+            text-align: center; 
+            margin: 20px;
+        }
+        .roommates { 
+            display: flex; 
+            justify-content: space-around; 
+            flex-wrap: wrap;
+        }
+        .roommate { 
+            text-align: center; 
+            margin: 10px;
+        }
+        .roommate img { 
+            width: 150px; 
+            height: 150px; 
+            border-radius: 50%;
+        }
+        .events { 
+            margin: 20px;
+        }
+        .event { 
+            border: 1px solid #ddd; 
+            padding: 10px; 
+            margin-bottom: 10px;
+        }
+        .event img { 
+            width: 150px; 
+            height: 150px; 
+        }
+        .events .event:nth-child(2) img {
+            width: 300px;
+            height: 225px;
+        }
+        .contact { 
+            margin: 20px; 
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <header>
+        <h1>欢迎来到启明2401寝室103</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">介绍</a></li>
+                <li><a href="#roommates">室友</a></li>
+                <li><a href="#events">活动</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="introduction" class="dorm-intro">
+        <h2>寝室简介</h2>
+        <p>欢迎来到不谙世室，本寝室有人口四人，三个湖北人，一个东北人，卷王零人。
+            工作日一定熄灯睡觉，周末睡觉一定熄灯。
+            有早八一定不迟到，没早八一定卡点到。
+        </p>
+        <p><a href="https://leggggend.github.io/freshmanweclass/" target="_blank">班级主页</a></p> 
+    </section>
+    <section id="roommates">
+        <h2>寝室成员</h2>
+        <div class="roommates">
+            <div class="roommate">
+                <img src="img/xyk.gif" alt="室友1">
+                <h3>建墙的苦逼(副)寝室长余-申</h3>
+                <p>爱好：唱</p>
+            </div>
+            <div class="roommate">
+                <img src="img/lzx.gif" alt="室友3">
+                <h3>游戏王大师轩嚣</h3>
+                <p>爱好：跳</p>
+            </div>
+            <div class="roommate">
+                <img src="img/cy.gif" alt="室友4">
+                <h3>steam最长游戏时间人世未谙</h3>
+                <p>爱好：rap</p>
+            </div>
+            <div class="roommate">
+                <img src="img/cdh.gif" alt="室友2">
+                <h3>热爱篮球Cccdh</h3>
+                <p>爱好：篮球</p>
+            </div>
+        </div>
+    </section>
+    <section id="events">
+        <h2>寝室活动</h2>
+        <div class="events">
+            <div class="event">
+                <h3>活动1：王者五排</h3>
+                <p>时间：晚上九点开始</p>
+                <p>特殊嘉宾：（正）寝室长</p>
+                <img src="img/rubbish.jpeg" alt="活动1">
+            </div>
+            <div class="event">
+                <h3>活动2：steam多人游戏</h3>
+                <p>时间：周末</p>
+                <p>游戏项目：超级鸡马，随机恐怖游戏</p>
+                <img src="img/chor.jpg" alt="活动2">
+            </div>
+            <!-- 更多活动 -->
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>我们的个人网页</h2>
+        <p><a href="https://freisure.github.io/pb/" target="_blank">余-申</a></p> 
+        <p><a href="https://xuanxiao233.github.io/lzx878/index.html" target="_blank">轩嚣</a></p> 
+        <p><a href="https://cccccy99.github.io/-Cccccy99github.io/" target="_blank">人世未谙</a></p> 
+        <p><a href="https://ccccccdh.github.io/Cccccdddddhhhhh/index.html" target="_blank">Cccdh</a></p>
+        <p><a href="#" target="_blank"></a></p>
+    </section>
+</body>
+</html>
